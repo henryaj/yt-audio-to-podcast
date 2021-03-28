@@ -3,4 +3,4 @@
 set -euo pipefail
 
 cd `dirname $0` && cd .. > /dev/null
-node server.js | tee server.log
+node server.js 2>&1 | tee server.log
